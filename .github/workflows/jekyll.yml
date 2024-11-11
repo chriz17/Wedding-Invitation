@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Undangan Pernikahan [Nama Pengantin]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Bagian Header dengan Nama Pengantin -->
+        <header class="header">
+            <h1>The Wedding of Leo & Tella</h1>
+            <p class="subheading">Kami dengan bahagia mengundang Anda untuk hadir dalam pernikahan kami.</p>
+        </header>
+
+        <!-- Info Acara Pernikahan -->
+        <section class="event-info">
+            <h2>Detail Acara</h2>
+	    <p><strong>Pengantin Pria:</strong> Leonardo Christian</p>
+            <p><strong>Pengantin Wanita:</strong> Christella Hendriyono</p>
+            <p><strong>Tanggal:</strong> 17 Januari 2026</p>
+            <p><strong>Waktu:</strong> 19:00 WIB</p>
+            <p><strong>Tempat:</strong> Restaurant Raja Kuring Jakarta</p>
+        </section>
+
+        <!-- Formulir RSVP -->
+        <section class="rsvp">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>Harap konfirmasi kehadiran Anda dengan mengisi formulir di bawah ini.</p>
+
+            <!-- Formulir RSVP -->
+            <form action="https://formspree.io/f/xnqzqgdp" method="POST">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="attendance">Apakah Anda Akan Hadir?</label>
+                <select id="attendance" name="attendance" required>
+                    <option value="Ya">Ya, saya akan hadir</option>
+                    <option value="Tidak">Tidak, saya tidak bisa hadir</option>
+                </select>
+
+                <label for="guests">Jumlah Orang yang Hadir</label>
+                <select id="guests" name="guests" required>
+                    <option value="1">1 Orang</option>
+                    <option value="2">2 Orang</option>
+                </select>
+
+                <label for="message">Pesan atau Doa untuk Pengantin (opsional)</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit" class="submit-btn">Kirim Konfirmasi</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Terima kasih atas perhatian dan doa Anda. Kami berharap bisa merayakan momen spesial ini bersama Anda!</p>
+        </footer>
+    </div>
+</body>
+</html>
